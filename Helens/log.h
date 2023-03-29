@@ -4,8 +4,8 @@
  * @author anxiaohuai
  * @email 1312607285@qq.com
  */
-#ifndef __SYLAR_LOG_H__
-#define __SYLAR_LOG_H__
+#ifndef __HELENS_LOG_H__
+#define __HELENS_LOG_H__
 
 #include <string>
 #include <stdint.h>
@@ -23,82 +23,82 @@
 /**
  * @brief 使用流式方式将日志级别level的日志写入到logger
  */
-#define SYLAR_LOG_LEVEL(logger, level) \
+#define HELENS_LOG_LEVEL(logger, level) \
     if(logger->getLevel() <= level) \
-        sylar::LogEventWrap(sylar::LogEvent::ptr(new sylar::LogEvent(logger, level, \
-                        __FILE__, __LINE__, 0, sylar::GetThreadId(),\
-                sylar::GetFiberId(), time(0), sylar::Thread::GetName()))).getSS()
+        helens::LogEventWrap(helens::LogEvent::ptr(new helens::LogEvent(logger, level, \
+                        __FILE__, __LINE__, 0, helens::GetThreadId(),\
+                helens::GetFiberId(), time(0), helens::Thread::GetName()))).getSS()
 
 /**
  * @brief 使用流式方式将日志级别debug的日志写入到logger
  */
-#define SYLAR_LOG_DEBUG(logger) SYLAR_LOG_LEVEL(logger, sylar::LogLevel::DEBUG)
+#define HELENS_LOG_DEBUG(logger) HELENS_LOG_LEVEL(logger, helens::LogLevel::DEBUG)
 
 /**
  * @brief 使用流式方式将日志级别info的日志写入到logger
  */
-#define SYLAR_LOG_INFO(logger) SYLAR_LOG_LEVEL(logger, sylar::LogLevel::INFO)
+#define HELENS_LOG_INFO(logger) HELENS_LOG_LEVEL(logger, helens::LogLevel::INFO)
 
 /**
  * @brief 使用流式方式将日志级别warn的日志写入到logger
  */
-#define SYLAR_LOG_WARN(logger) SYLAR_LOG_LEVEL(logger, sylar::LogLevel::WARN)
+#define HELENS_LOG_WARN(logger) HELENS_LOG_LEVEL(logger, helens::LogLevel::WARN)
 
 /**
  * @brief 使用流式方式将日志级别error的日志写入到logger
  */
-#define SYLAR_LOG_ERROR(logger) SYLAR_LOG_LEVEL(logger, sylar::LogLevel::ERROR)
+#define HELENS_LOG_ERROR(logger) HELENS_LOG_LEVEL(logger, helens::LogLevel::ERROR)
 
 /**
  * @brief 使用流式方式将日志级别fatal的日志写入到logger
  */
-#define SYLAR_LOG_FATAL(logger) SYLAR_LOG_LEVEL(logger, sylar::LogLevel::FATAL)
+#define HELENS_LOG_FATAL(logger) HELENS_LOG_LEVEL(logger, helens::LogLevel::FATAL)
 
 /**
  * @brief 使用格式化方式将日志级别level的日志写入到logger
  */
-#define SYLAR_LOG_FMT_LEVEL(logger, level, fmt, ...) \
+#define HELENS_LOG_FMT_LEVEL(logger, level, fmt, ...) \
     if(logger->getLevel() <= level) \
-        sylar::LogEventWrap(sylar::LogEvent::ptr(new sylar::LogEvent(logger, level, \
-                        __FILE__, __LINE__, 0, sylar::GetThreadId(),\
-                sylar::GetFiberId(), time(0), sylar::Thread::GetName()))).getEvent()->format(fmt, __VA_ARGS__)
+        helens::LogEventWrap(helens::LogEvent::ptr(new helens::LogEvent(logger, level, \
+                        __FILE__, __LINE__, 0, helens::GetThreadId(),\
+                helens::GetFiberId(), time(0), helens::Thread::GetName()))).getEvent()->format(fmt, __VA_ARGS__)
 
 /**
  * @brief 使用格式化方式将日志级别debug的日志写入到logger
  */
-#define SYLAR_LOG_FMT_DEBUG(logger, fmt, ...) SYLAR_LOG_FMT_LEVEL(logger, sylar::LogLevel::DEBUG, fmt, __VA_ARGS__)
+#define HELENS_LOG_FMT_DEBUG(logger, fmt, ...) HELENS_LOG_FMT_LEVEL(logger, helens::LogLevel::DEBUG, fmt, __VA_ARGS__)
 
 /**
  * @brief 使用格式化方式将日志级别info的日志写入到logger
  */
-#define SYLAR_LOG_FMT_INFO(logger, fmt, ...)  SYLAR_LOG_FMT_LEVEL(logger, sylar::LogLevel::INFO, fmt, __VA_ARGS__)
+#define HELENS_LOG_FMT_INFO(logger, fmt, ...)  HELENS_LOG_FMT_LEVEL(logger, helens::LogLevel::INFO, fmt, __VA_ARGS__)
 
 /**
  * @brief 使用格式化方式将日志级别warn的日志写入到logger
  */
-#define SYLAR_LOG_FMT_WARN(logger, fmt, ...)  SYLAR_LOG_FMT_LEVEL(logger, sylar::LogLevel::WARN, fmt, __VA_ARGS__)
+#define HELENS_LOG_FMT_WARN(logger, fmt, ...)  HELENS_LOG_FMT_LEVEL(logger, helens::LogLevel::WARN, fmt, __VA_ARGS__)
 
 /**
  * @brief 使用格式化方式将日志级别error的日志写入到logger
  */
-#define SYLAR_LOG_FMT_ERROR(logger, fmt, ...) SYLAR_LOG_FMT_LEVEL(logger, sylar::LogLevel::ERROR, fmt, __VA_ARGS__)
+#define HELENS_LOG_FMT_ERROR(logger, fmt, ...) HELENS_LOG_FMT_LEVEL(logger, helens::LogLevel::ERROR, fmt, __VA_ARGS__)
 
 /**
  * @brief 使用格式化方式将日志级别fatal的日志写入到logger
  */
-#define SYLAR_LOG_FMT_FATAL(logger, fmt, ...) SYLAR_LOG_FMT_LEVEL(logger, sylar::LogLevel::FATAL, fmt, __VA_ARGS__)
+#define HELENS_LOG_FMT_FATAL(logger, fmt, ...) HELENS_LOG_FMT_LEVEL(logger, helens::LogLevel::FATAL, fmt, __VA_ARGS__)
 
 /**
  * @brief 获取主日志器
  */
-#define SYLAR_LOG_ROOT() sylar::LoggerMgr::GetInstance()->getRoot()
+#define HELENS_LOG_ROOT() helens::LoggerMgr::GetInstance()->getRoot()
 
 /**
  * @brief 获取name的日志器
  */
-#define SYLAR_LOG_NAME(name) sylar::LoggerMgr::GetInstance()->getLogger(name)
+#define HELENS_LOG_NAME(name) helens::LoggerMgr::GetInstance()->getLogger(name)
 
-namespace sylar {
+namespace helens {
 
 class Logger;
 class LoggerManager;
@@ -613,7 +613,7 @@ private:
 };
 
 /// 日志器管理类单例模式
-typedef sylar::Singleton<LoggerManager> LoggerMgr;
+typedef helens::Singleton<LoggerManager> LoggerMgr;
 
 }
 
