@@ -1,10 +1,10 @@
 /**
  * @file thread.h
  * @brief 线程相关的封装
- * @author helens.yin
- * @email 564628276@qq.com
- * @date 2019-05-31
- * @copyright Copyright (c) 2019年 helens.yin All rights reserved (www.helens.top)
+ * @author anxiaohuai
+ * @email 2290833113@qq.com
+ * @date 2023-03-02
+ * @copyright Copyright (c) 2023年 helens All rights reserved
  */
 #ifndef __HELENS_THREAD_H__
 #define __HELENS_THREAD_H__

@@ -2,7 +2,7 @@
  * @file log.h
  * @brief 日志模块封装
  * @author anxiaohuai
- * @email 1312607285@qq.com
+ * @email 2290833113@qq.com
  */
 #ifndef __HELENS_LOG_H__
 #define __HELENS_LOG_H__
