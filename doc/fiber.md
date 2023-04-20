@@ -4,7 +4,7 @@
 
 要做的协程是：每一个线程有一个主协程，主协程-->n个子协程，每一个子协程的调度都需要返回主协程去进行调度。
 
-![调用图](https://github.com/anxiaohuai/Helens/blob/main/doc/%E8%B0%83%E7%94%A8%E5%9B%BE.jpg)
+![调用图](https://github.com/anxiaohuai/Helens/blob/main/doc/%E5%8D%8F%E7%A8%8B%E8%B0%83%E7%94%A8%E5%9B%BE.jpg)
 
 ## 库：
 
