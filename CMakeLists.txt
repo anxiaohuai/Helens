@@ -26,6 +26,7 @@ set(LIB_SRC
     helens/mutex.cc
     helens/thread.cc
     helens/util.cc
+    helens/fiber.cc
     )
 
 ragelmaker(helens/http/http11_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/helens/http)
@@ -58,6 +59,7 @@ helens_add_executable(test_util "tests/test_util.cc" helens "${LIBS}")
 helens_add_executable(test1 "tests/test.cc" helens "${LIBS}")
 helens_add_executable(test_config "tests/test_config.cc" helens "${LIBS}")
 helens_add_executable(test_thread "tests/test_thread.cc" helens "${LIBS}")
+helens_add_executable(test_thread "tests/test_fiber.cc" helens "${LIBS}")
 set(ORM_SRCS
     helens/orm/table.cc
     helens/orm/column.cc
