@@ -1,5 +1,0 @@
-# Hashes of file build rules.
-dc9e1b57a25c2a396f4a8567b7f7daf0 ../helens/http/http11_parser.rl.cc
-79f9ae809cd8539c489beaa0e8c5ff3b ../helens/http/httpclient_parser.rl.cc
-50203e650767ead189f91282150bc4b0 ../helens/ns/ns_protobuf.pb.cc
-a52e08da1592e307b193cba716d6f748 ../helens/uri.rl.cc
