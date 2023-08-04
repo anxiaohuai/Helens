@@ -1,6 +1,5 @@
 #include "helens/helens.h"
 
-//测试线程模块的可用性
 helens::Logger::ptr g_logger = HELENS_LOG_ROOT();
 
 void run_in_fiber() {

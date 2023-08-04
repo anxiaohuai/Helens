@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+.././helens/address.h
+memory
+-
+string
+-
+sys/types.h
+-
+sys/socket.h
+-
+sys/un.h
+-
+arpa/inet.h
+-
+unistd.h
+-
+iostream
+-
+vector
+-
+map
+-
+
+.././helens/uri.h
+memory
+-
+string
+-
+stdint.h
+-
+address.h
+.././helens/address.h
+
+/home/hg/helens/tests/test_uri.cc
+helens/uri.h
+/home/hg/helens/tests/helens/uri.h
+iostream
+-
+
