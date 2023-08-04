@@ -1,10 +1,10 @@
 /**
  * @file iomanager.h
  * @brief 基于Epoll的IO协程调度器
- * @author anxiaohuai
- * @email 2290833113@qq.com
+ * @author helens.yin
+ * @email 564628276@qq.com
  * @date 2019-05-28
- * @copyright Copyright (c) 2023年 helens All rights reserved
+ * @copyright Copyright (c) 2019年 helens.yin All rights reserved (www.helens.top)
  */
 #ifndef __HELENS_IOMANAGER_H__
 #define __HELENS_IOMANAGER_H__

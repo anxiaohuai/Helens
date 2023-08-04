@@ -1,10 +1,10 @@
 /**
  * @file hook.h
  * @brief hook函数封装
- * @author anxiaohuai
- * @email 2290833113@qq.com
+ * @author helens.yin
+ * @email 564628276@qq.com
  * @date 2019-06-02
- * @copyright Copyright (c) 2023年 helens All rights reserved
+ * @copyright Copyright (c) 2019年 helens.yin All rights reserved (www.helens.top)
  */
 
 #ifndef __HELENS_HOOK_H__
