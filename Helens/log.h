@@ -1,8 +1,10 @@
 /**
  * @file log.h
  * @brief 日志模块封装
- * @author anxiaohuai
- * @email 2290833113@qq.com
+ * @author helens.yin
+ * @email 564628276@qq.com
+ * @date 2019-05-23
+ * @copyright Copyright (c) 2019年 helens.yin All rights reserved (www.helens.top)
  */
 #ifndef __HELENS_LOG_H__
 #define __HELENS_LOG_H__

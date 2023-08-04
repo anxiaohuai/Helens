@@ -1,14 +1,13 @@
 /**
  * @file fiber.h
  * @brief 协程封装
- * @author anxiaohuai
- * @email 2290833113@qq.com
- * @date 2023-04-20
- * @copyright Copyright (c) 2023年 helens All rights reserved
+ * @author helens.yin
+ * @email 564628276@qq.com
+ * @date 2019-05-24
+ * @copyright Copyright (c) 2019年 helens.yin All rights reserved (www.helens.top)
  */
 #ifndef __HELENS_FIBER_H__
 #define __HELENS_FIBER_H__
-
 
 #include <memory>
 #include <functional>

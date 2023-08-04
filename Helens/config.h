@@ -1,10 +1,10 @@
 /**
  * @file config.h
  * @brief 配置模块
- * @author anxiaohuai
- * @email 2290833113@qq.com
- * @date 2023-02-04
- * @copyright Copyright (c) 2023年 helens All rights reserved
+ * @author helens.yin
+ * @email 564628276@qq.com
+ * @date 2019-05-22
+ * @copyright Copyright (c) 2019年 helens.yin All rights reserved (www.helens.top)
  */
 #ifndef __HELENS_CONFIG_H__
 #define __HELENS_CONFIG_H__

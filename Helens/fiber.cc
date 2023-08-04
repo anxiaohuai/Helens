@@ -130,7 +130,7 @@ void Fiber::back() {
     }
 }
 
-//切换到当前协程执行,使用swapcontext
+//切换到当前协程执行
 void Fiber::swapIn() {
     SetThis(this);
     HELENS_ASSERT(m_state != EXEC);
@@ -140,7 +140,7 @@ void Fiber::swapIn() {
     }
 }
 
-//切换到后台执行使用swapcontext
+//切换到后台执行
 void Fiber::swapOut() {
     SetThis(Scheduler::GetMainFiber());
     if(swapcontext(&m_ctx, &Scheduler::GetMainFiber()->m_ctx)) {

@@ -15,14 +15,12 @@ Semaphore::~Semaphore() {
 }
 
 void Semaphore::wait() {
-//等待
     if(sem_wait(&m_semaphore)) {
         throw std::logic_error("sem_wait error");
     }
 }
 
 void Semaphore::notify() {
-//增加信号量的数量，唤醒sem_wait
     if(sem_post(&m_semaphore)) {
         throw std::logic_error("sem_post error");
     }

@@ -1,10 +1,10 @@
 /**
  * @file singleton.h
  * @brief 单例模式封装
- * @author anxiaohuai
- * @email 2290833113@qq.com
- * @date 2023-04-19
- * @copyright Copyright (c) 2023年 helens All rights reserved
+ * @author helens.yin
+ * @email 564628276@qq.com
+ * @date 2019-05-18
+ * @copyright Copyright (c) 2019年 helens.yin All rights reserved (www.helens.top)
  */
 #ifndef __HELENS_SINGLETON_H__
 #define __HELENS_SINGLETON_H__
