@@ -19,10 +19,10 @@ namespace=$2
 
 command_error_exit mkdir $project_name
 command_error_exit cd $project_name
-command_error_exit git clone https://github.com/helens-yin/helens.git
+command_error_exit git clone https://github.com/anxiaohuai/Helens.git
 command_error_exit cp helens/Makefile .
-command_error_exit cp -rf helens/template/* .
-command_error_exit cp -rf helens/template/* .
+command_error_exit cp -rf Helens/template/* .
+command_error_exit cp -rf Helens/template/* .
 command_error_exit mv template ${namespace}
 command_error_exit sed -i "s/project_name/${project_name}/g" CMakeLists.txt
 command_error_exit sed -i "s/template/${namespace}/g" CMakeLists.txt
